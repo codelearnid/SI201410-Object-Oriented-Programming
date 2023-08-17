@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mywebsite | The best, awesome website ever</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+ /* ====GLOBAL STYLE==== */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #F8F8F8;
+      font-family: Cambria, "Times New Roman", serif;
+    }
+    .container {
+      width: 960px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 0 20px;
+	  box-shadow: 1px 0px 15px, -1px 0px 15px ;
+    }
+    .clear{
+      clear: both;
+    }
+	#mainMenu {
+      display: none;
+    }
+    
+    /* =====HEADER===== */
+    .header{
+      height: 95px;
+      background: url('image/mywebsite_logo.png')
+                  no-repeat 10px 10px ;
+    }
+    .header .ads {
+      float: right;
+      margin-top: 15px;
+    }
+    
+    /* =====NAVIGATION===== */
+    .nav ul, .nav li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-transform: uppercase;
+	  z-index: 1;
+    }
+    .nav li a {
+      display: block;
+      background-color: #198C13;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      height: 30px;
+      line-height: 30px;
+      padding: 5px 20px;
+      border-bottom: 2px solid #FFF;
+    }
+    .nav li:hover>a {
+      background-color: #0AED0A;
+      color: black;
+    }
+	.nav ul li{
+      position: relative;
+      float: left;
+    }
+    .topmenu li:hover ul{
+      left: 0;
+    }
+    ul.submenu li {
+      width: 180px;
+    }
+    ul.submenu {
+      position: absolute;
+      top: 42px;
+      left: -2000px;
+    }
+    
+    /* =====SIDEBAR===== */
+    .sidebar {
+      width: 280px;
+      float: left;
+      margin-top: 10px;
+    }
+    .sidebar img {
+      width: 280px;
+      margin: 10px 0;
+    }
+    .sidebar ul, .sidebar li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .sidebar li a {
+      display: block;
+      background-color: #198C13;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      height: 30px;
+      line-height: 30px;
+      padding-left: 10px;
+      border-bottom: 2px solid #FFF;
+    }
+    .sidebar li a:hover {
+      background-color: #0AED0A;
+      color: black;
+    }
+    
+    /* =====MAIN===== */
+    .main{
+      width: 660px;
+      float: right;
+    }
+    .article {
+      margin: 10px;
+      overflow: hidden;
+    }
+    .article h1 {
+      margin: 0px;
+	  text-shadow: 3px 3px 1px silver;
+    }
+    .main p, .main hr {
+      margin: 5px 0;
+    }
+    .article img {
+      height: 150px;
+      float: left;
+      padding: 10px 10px 0px 0;
+	  opacity: 0.7;
+	  transition: 0.5s;
+    }
+	.article img:hover {
+	  opacity: 1;
+	  cursor: pointer;
+	}
+    
+     /* =====FOOTER===== */
+    .footer{
+      margin-top: 20px;
+      border-top: 1px solid black;
+      overflow: hidden;
+     }
+    .copyright {
+      float: left;
+     }
+    .footermenu ul, .footermenu li {
+      margin: 0;
+      list-style: none;
+      float: right;
+     }
+    .footermenu li a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 5px;
+      color: #198C13;
+    }
+	.footermenu li a:hover {
+      text-decoration: underline;
+    }
+	
+   /* =====MEDIA QUERY TABLET===== */
+	@media only screen and (min-width: 481px) and (max-width: 900px){
+	  .container {
+        width: 80%;
+	    min-width: 660px;
+	  }
+	  .header .ads {
+	    width: 50%;
+      }
+	  .sidebar {
+        width: 28%;
+	  }
+	  .sidebar img {
+        width: 100%;
+      }
+	  .main{
+        width: 70%;
+      }
+	}	
+	
+	/* =====MEDIA QUERY SMARTPHONE===== */
+    @media only screen and (max-width: 480px){  
+      .container {
+        width: 320px;
+      }
+      .main {
+        float: none;
+        width: 320px;
+      }
+      .sidebar {
+        float: none;
+        width: 320px;
+      }
+      .article img {
+        width: 100%;
+       float: none;
+        padding: 10px 10px 0px 0;
+      }
+      .sidebar img {
+        width: 100%;
+      }
+      #mainMenu {
+        display: block;
+        width: 100%;
+	    float: none;
+	    margin-top: 70px;
+      }
+      .topmenu {
+        display: none;
+      }
+      .header .ads {
+        width: 100%;
+        float: none;
+        margin-top: 100px;
+      }
+      .footer{
+        margin-top: 0px;
+	  }
+      .footermenu, .footermenu li, .copyright {
+	    padding: 0;
+        float: none;
+	    text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+	  <a href=iklan.html>
+      <img class="ads" src="image/ads_horizontal.png" />
+	  </a>
+    </div>
+    <div class="nav">
+      <ul class="topmenu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="categories.html">Categories</a>
+          <ul class="submenu">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="php.html">PHP</a></li>
+            <li><a href="mysql.html">MySQL</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+          </ul>
+        </li>
+        <li><a href="our_product.html">Our Product</a>
+            <ul class="submenu">
+            <li><a href="ebook.html">eBook</a></li>
+            <li><a href="buku.html">Buku</a></li>
+            <li><a href="video_dvd.html">Video DVD</a></li>
+          </ul>
+        
+        </li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+  
+	  <select id="mainMenu">
+        <option value="home.html">Home</option>
+        <option value="blog.html">Blog</option>
+        <option value="categories.html">Categories</option>
+          <option value="html.html">+ HTML</option>
+          <option value="css.html">+ CSS</option>
+          <option value="php.html">+ PHP</option>
+          <option value="mysql.html">+ MySQL</option>
+          <option value="javascript.html">+ JavaScript</option>
+        <option value="our_product.html">Our Product</option>
+          <option value="ebook.html">+ eBook</option>
+          <option value="buku.html">+ Buku</option>
+          <option value="video_dvd.html">+ Video DVD</option>
+        <option value="contact_us.html">Contact Us</option>
+      </select>
+    <br class="clear">
+    </div>
+    <div class="main">
+      <div class="article">
+        <h1>Our Best Awesome Article #1</h1>
+        <img src="image/gambar1.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mi
+        tortor, imperdiet sed hendrerit non, consequat luctus magna. Nullam
+        accumsan odio ac lectus mollis finibus. 
+        </p>
+        <p>Aliquam a lectus porta, bibendum enim id, dictum nunc. Duis tincidunt
+        sed turpis non suscipit. Nunc id mi molestie, porta leo id, vulputate eros.
+        </p>
+      </div>
+      <hr class="clear">
+      <div class="article">
+        <h1>Our Best Awesome Article #2</h1>
+        <img src="image/gambar2.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mi
+        tortor, imperdiet sed hendrerit non, consequat luctus magna. Nullam
+        accumsan odio ac lectus mollis finibus. 
+        </p>
+        <p>Aliquam a lectus porta, bibendum enim id, dictum nunc. Duis tincidunt
+        sed turpis non suscipit. Nunc id mi molestie, porta leo id, vulputate eros.
+        Curabitur eget nibh dignissim ipsum interdum maximus at scelerisque odio.
+        Nullam elementum ultrices arcu, hendrerit molestie erat malesuada tincidunt.
+        Praesent eu libero non sapien dictum fringilla sit amet ac nisl.
+        </p>
+      </div>
+      <hr class="clear">
+      <div class="article">
+        <h1>Our Best Awesome Article #3</h1>
+        <img src="image/gambar3.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mi
+        tortor, imperdiet sed hendrerit non, consequat luctus magna. Nullam
+        accumsan odio ac lectus mollis finibus. 
+        </p>
+        <p>Aliquam a lectus porta, bibendum enim id, dictum nunc. Duis tincidunt
+        sed turpis non suscipit. Nunc id mi molestie, porta leo id, vulputate eros.          
+        </p>
+      </div>
+    </div>
+	    <div class="sidebar">
+      <img src="image/gambar4.jpg" >
+      <ul>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="php.html">PHP</a></li>
+        <li><a href="mysql.html">MySQL</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+      </ul>
+	    <a href=iklan.html>
+        <img src="image/ads280.png" alt="Bundara HI">
+		</a>
+    </div>
+    <br class="clear">
+    <div class="footer">
+      <p class="copyright">Copyright Awesome Website 2023</p>
+      <ul class="footermenu">
+        <li><a href="term_of_use.html">Term of Use</a></li>
+        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>   
+    </div>
+  </div>
+  <script>
+    document.getElementById("mainMenu").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+  </script>
+</body>
+</html>
