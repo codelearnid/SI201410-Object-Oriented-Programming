@@ -1,4 +1,4 @@
-# Modul Kuliah Minggu Ke 1 - Materi CSS
+# Modul Kuliah Minggu Ke 2 - Materi CSS
 Dosen Pengampu : **Arif Wicaksono Septyanto**
 
 Tujuan :
