@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar Form HTML5</title>
+</head>
+<body>
+  <iframe id="editor" src="hello_world.html"></iframe>
+  <br>
+  <button onclick="startEdit()">Mulai Edit</button>
+  <button onclick="getText()">Tampilkan Teks</button>
+  <br><br>
+  <div id="container"></div>
+  
+  <script>
+     function startEdit(){
+       var editor=document.getElementById("editor");
+       editor.contentWindow.document.designMode = "on";
+     }
+     function getText(){
+       document.getElementById("container").textContent=
+  	 editor.contentWindow.document.body.innerHTML;
+     }
+  </script>
+</body>
+</html>

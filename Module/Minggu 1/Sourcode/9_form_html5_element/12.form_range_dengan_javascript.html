@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar Form HTML5</title>
+</head>
+<body>
+<form action="prosesform.php" method="get">
+  <p>Umur: <input type="range" name="umur" min="0" max="99" step="5" 
+  onchange="updateNilaiSlider(this.value);">
+  <span id="nilai_slider"></span></p>
+  <p><input type="submit" value="Kirim Data"></p>
+</form> 
+<script>
+  function updateNilaiSlider(val) {
+    document.getElementById('nilai_slider').innerHTML=val; 
+  }
+</script>

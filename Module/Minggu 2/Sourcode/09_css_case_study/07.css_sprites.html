@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar CSS</title>
+  <style>
+    .container {
+      width: 720px;
+      margin: 0 auto;
+    }
+    .container div {
+      height:65px;
+      width:80px;
+      float: left;
+    }
+
+    .twitter{background:url('gambar/social.png') 0 0;}
+    .twitter:hover{background: url('gambar/social.png') 0 -64px;}
+     
+    .fb{background:url('gambar/social.png') -70px 0;}
+    .fb:hover{background: url('gambar/social.png') -70px -64px;}
+     
+    .youtube{background:url('gambar/social.png') -145px 0;}
+    .youtube:hover{background: url('gambar/social.png') -145px -64px;}
+     
+    .rss {background:url('gambar/social.png') -220px 0;}
+    .rss:hover{background: url('gambar/social.png') -220px -64px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="twitter"></div>
+    <div class="fb"></div>
+    <div class="youtube"></div>
+    <div class="rss"></div>
+  </div>
+</body>
+</html>

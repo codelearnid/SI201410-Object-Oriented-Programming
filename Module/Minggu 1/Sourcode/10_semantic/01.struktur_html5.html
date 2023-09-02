@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+  <meta charset="UTF-8">
+  <title>Layout Halaman dengan HTML5</title>
+  <style>
+   h1, p {
+    margin: 0px;
+   }
+   #container {
+    width: 960px;
+    margin: 10px auto;
+    background-color: #f2f2f2;
+    height: 620px;
+   }
+   #container>header{
+    width: 940px;
+    float: left;
+    margin: 10px;
+    background-color: #d5d2d2;
+    height: 150px;	 
+   }
+   #logo {
+    width: 150px;
+    height: 80px;
+    float: left;
+    background-color: #adacac;
+    margin: 10px;
+    clear: both;
+   }
+   nav {
+    float: left;
+    background-color: #adacac;
+    margin: 0 10px;
+    clear: both;
+   }
+   nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   }
+   nav ul li {
+    float: left;
+   }
+   nav ul a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    height: 20px;
+    display: block;
+   }
+   nav ul a:hover {
+    color: white;
+    background-color: #838181;
+   }
+   main{
+    width: 700px;
+    float: left;
+    margin: 0px 10px 10px 10px;
+    background-color: #d5d2d2;
+    height: 370px;	 
+   }
+   article {
+    width: 680px;
+    float: left;
+    margin: 10px;
+    background-color: #adacac;
+    height: 350px;
+   }
+   article header, article section, article footer {
+    background-color: #838181;
+    width: 640px;
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    float: left;
+    clear: both;
+   }
+   article header{
+    margin-top: 70px;	
+   }
+   aside{
+    width: 230px;
+    float: left;
+    background-color: #d5d2d2;
+    height: 370px;	 
+   }
+   aside section {
+    background-color: #838181;
+    width:190px;
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    height: 90px;	 
+    float: left;
+    clear: both;
+   }
+   footer {
+    width: 940px;
+    float: left;
+    margin: 0px 10px 10px 10px;
+    background-color: #d5d2d2;
+    height: 60px;	 
+   }
+   footer div {
+    margin: 30px 10px;
+   }
+   footer p {
+    float: left
+   }
+   footer nav {
+    float: right;
+    margin: -40px 0 0 0;
+   }
+  </style>
+</head>
+<body>
+<div id="container">
+<header>
+  <div id="logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="pendaftaran.html">Pendaftaran</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <header>
+      <h1>Judul Artikel</h1>
+      <p>Tanggal, Kategori, Tag</p>
+    </header>
+    <section>
+      <p>....isi artikel disini...</p>
+      <p>....isi artikel disini...</p>
+      <p>....isi artikel disini...</p>
+      <p>....isi artikel disini...</p>
+    </section>
+    <footer>
+      <p>Artikel ini ditulis oleh...</p>	
+    </footer>
+  </article>
+</main>
+
+<aside>
+  <section>
+    <h1>Judul Sidebar 1</h1>
+    <p>....isi sideabar 1 disini...</p>
+  </section>
+  <section>
+    <h1>Judul Sidebar 2</h1>
+    <p>....isi sideabar 2 disini...</p>
+  </section>
+  <section>
+    <h1>Judul Sidebar 3</h1>
+    <p>....isi sideabar 3 disini...</p>
+  </section>
+</aside>
+
+<footer>
+  <div>
+  <p> 2015 Dunia Ilkom. All Rights Reserved.</p>
+  <nav>
+    <ul>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="term_of_use.html">Term of User</a></li>
+      <li><a href="privacy_policy.html">Privacy Policy</a></li>
+      <li><a href="about_us.html">About Us</a></li>
+    </ul>
+  </nav>
+  </div>
+</footer>
+</div>
+</body>
+</html>

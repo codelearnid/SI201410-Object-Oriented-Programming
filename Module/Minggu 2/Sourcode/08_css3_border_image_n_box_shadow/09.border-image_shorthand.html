@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar CSS</title>
+  <style>
+    .container {
+      width: 900px;
+      margin: 50px auto;
+    }
+    .satu, .dua, .tiga {
+      width: 200px;
+      height: 200px;
+      background-color: #39B54A;
+      float: left;
+      margin-left: 100px;
+    }
+    .satu {
+      border-image: url('gambar/border1.png') 33 fill / 30px / 30px round;
+    }
+    .dua {
+      border-image: url('gambar/border2.png') 20 / 20px / 30px round;
+    }
+    .tiga {
+      border-image: url('gambar/border3.png') 30% / 30px / 0px round;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+  </div>
+</body>
+</html>

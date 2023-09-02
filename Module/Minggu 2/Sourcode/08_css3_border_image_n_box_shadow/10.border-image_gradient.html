@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar CSS</title>
+  <style>
+    .container {
+      width: 700px;
+      margin: 0 auto;
+    }
+    .satu {
+      width: 200px;
+      height: 200px;
+      background-color: #39B54A;
+      margin-top: 50px;
+      
+      border-image-width: 20px;
+      border-image-source: repeating-linear-gradient(to bottom right, blue, white, blue 10px);
+      border-image-slice: 10%;
+      border-image-repeat: round;
+      border-image-outset: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="satu"></div>
+  </div>
+</body>
+</html>

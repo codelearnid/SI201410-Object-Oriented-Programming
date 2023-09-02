@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar CSS</title>
+  <style>
+  input:disabled {
+    border: solid red 2px;
+  }
+  input:enabled {
+    border: solid green 2px;
+  }
+  input:checked{
+    margin-left: 30px;
+  }
+  </style>
+</head>
+<body>
+<form action="register.php" method=get>
+  <p>Nama: <input type="text" name="nama" disabled></p>
+  <p>Umur: <input type="text" name="umur" ></p>
+  <p>Alamat: <input type="text" name="alamat"></p>
+  <p><input type="checkbox" name="mahasiswa">Mahasiswa</p>
+  <p><input type="checkbox" name="pelajar">Pelajar</p>
+</form>
+</body>
+</html>

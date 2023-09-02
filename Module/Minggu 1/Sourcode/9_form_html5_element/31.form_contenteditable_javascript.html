@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar Form HTML5</title>
+</head>
+<body>
+  <p contenteditable="true" id="editor">Anda bisa mengedit text ini</p>
+  <button onclick="getText()">Copy Teks</button>
+  <br><br>
+  <div id="container"></div>
+  
+  <script>
+     function getText(){
+       var a=document.getElementById("editor").innerHTML;
+       document.getElementById("container").innerHTML=a;
+     }
+  </script>
+</body>
+</html>
