@@ -1,42 +1,42 @@
 body {
-    display: flex; /* Menggunakan flexbox untuk penataan */
-    justify-content: center; /* Memusatkan konten secara horizontal */
-    align-items: center; /* Memusatkan konten secara vertikal */
-    height: 100vh; /* Mengatur tinggi body menjadi 100% viewport height */
-    margin: 0; /* Menghilangkan margin default */
-    font-family: Arial, sans-serif; /* Mengatur font default */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 /* Mengatur gaya dan ukuran form */
 form {
-    width: 300px; /* Mengatur lebar form */
-    padding: 20px; /* Menambahkan ruang dalam form */
-    border: 1px solid #ccc; /* Menambahkan garis tepi pada form */
-    border-radius: 5px; /* Membuat sudut form melengkung */
-    background-color: #f9f9f9; /* Memberikan warna latar pada form */
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
 /* Mengatur gaya input dan textarea */
 input, textarea {
-    width: 100%; /* Mengatur lebar input dan textarea menjadi 100% */
-    margin-bottom: 10px; /* Menambahkan jarak antar elemen */
-    padding: 8px; /* Menambahkan ruang dalam elemen */
-    border: 1px solid #ccc; /* Menambahkan garis tepi pada input dan textarea */
-    border-radius: 4px; /* Membuat sudut input dan textarea melengkung */
-    box-sizing: border-box; /* Menghindari elemen meluap dari kontainer */
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 /* Mengatur gaya tombol submit */
 input[type="submit"] {
-    background-color: #4CAF50; /* Warna latar tombol submit */
-    color: white; /* Warna teks tombol submit */
-    border: none; /* Menghilangkan garis tepi */
-    padding: 10px 15px; /* Menambahkan padding pada tombol */
-    border-radius: 4px; /* Membuat sudut tombol melengkung */
-    cursor: pointer; /* Mengubah kursor saat hover */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Mengatur gaya tombol submit saat hover */
 input[type="submit"]:hover {
-    background-color: #45a049; /* Mengubah warna latar saat hover */
+    background-color: #45a049;
 }
