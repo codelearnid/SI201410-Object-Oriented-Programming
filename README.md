@@ -1,10 +1,11 @@
 # SI201410-Object-Oriented-Programming
-Repo Matakuliah Object oriented programming / Pemrograman Berorientasi Objek <br>
 
-Dosen Pengampu : **Arif Wicaksono Septyanto, S.Kom., M.Kom**<br>
+Repo Matakuliah Object oriented programming / Pemrograman Berorientasi Objek `<br>`
 
+Dosen Pengampu : **Arif Wicaksono Septyanto, S.Kom., M.Kom**`<br>`
 
 Referensi yang digunakan :
+
 - [	Gamma, Erich;Helm, Richard;Johnson, Ralph E.;Vlissides, John, 2016] - 	Design patterns: elements of reusable object-oriented software
 - [	Peter MacIntyre, Kevin Tatroe, 2016] - 	Programming PHP
 - [Duniailkom](https://www.duniailkom.com/)
@@ -12,3 +13,5 @@ Referensi yang digunakan :
 - [tutorialspoint](https://www.tutorialspoint.com/index.htm)
 - [stackoverflow](https://stackoverflow.com/)
 - [getbootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+
+
