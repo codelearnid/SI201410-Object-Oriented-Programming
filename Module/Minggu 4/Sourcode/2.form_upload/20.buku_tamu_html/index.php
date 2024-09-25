@@ -43,7 +43,7 @@
 </head>
 <body>
 <div class="container">
-<h1>Buku Tamu Duniailkom</h1>
+<h1>Buku Tamu Codelearn</h1>
 <form action="index.php" method="post" enctype="multipart/form-data" >
 <fieldset>
 <legend>Buku Tamu</legend>

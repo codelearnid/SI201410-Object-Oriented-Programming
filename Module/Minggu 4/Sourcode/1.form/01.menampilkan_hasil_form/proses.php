@@ -8,6 +8,7 @@
 <h1>Halaman Proses</h1>
 <pre>
 <?php
+  // print_r digunakan untuk menampilkan isi dari array atau objek
   print_r($_POST);
 ?>
 </pre>

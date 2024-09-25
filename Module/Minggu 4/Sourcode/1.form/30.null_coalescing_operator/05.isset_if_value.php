@@ -1,5 +1,5 @@
 <?php
-  $_POST["kado"] = "Buku Duniailkom";
+  $_POST["kado"] = "Buku Codelearn";
   
   if (isset($_POST["kado"])) {
     $kado = $_POST["kado"];
@@ -8,4 +8,4 @@
     $kado = "";
   }
   
-  echo $kado;  // "Buku Duniailkom"
+  echo $kado;  // "Buku Codelearn"

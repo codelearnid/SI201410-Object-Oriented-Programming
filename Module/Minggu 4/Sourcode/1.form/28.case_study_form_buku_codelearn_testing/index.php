@@ -54,7 +54,7 @@
 <body>
 
 <div class="container">
-<h1>Pembelian Buku Duniailkom</h1>
+<h1>Pembelian Buku CodeLearn</h1>
 
 <form action="index.php" method="post">
 <fieldset>

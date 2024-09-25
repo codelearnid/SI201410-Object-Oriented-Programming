@@ -49,7 +49,7 @@
 <body>
 
 <div class="container">
-<h1>Buku Tamu Duniailkom</h1>
+<h1>Buku Tamu Codelearn</h1>
 <table>
 <img src="<?php echo "folder_upload/$nama_file" ?>">
 <tr>

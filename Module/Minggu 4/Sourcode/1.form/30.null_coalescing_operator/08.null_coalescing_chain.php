@@ -1,6 +1,6 @@
 <?php
-  $prize = "Semua Buku Duniailkom";
+  $prize = "Semua Buku Codelearn";
 
   $kado = $_POST["kado"] ?? $prize ?? "";
 
-  echo $kado;  // "Semua Buku Duniailkom"
+  echo $kado;  // "Semua Buku Codelearn"

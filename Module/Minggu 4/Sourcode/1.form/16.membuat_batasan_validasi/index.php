@@ -3,6 +3,9 @@
   if (isset($_POST["submit"])) {
 
     // ambil nilai form
+    // htmlentities digunakan untuk mengkonversi karakter khusus HTML menjadi entitas HTML untuk mencegah XSS.
+    // strip_tags digunakan untuk menghapus tag HTML dan PHP dari string.
+    // trim digunakan untuk menghapus whitespace dari awal dan akhir string.
     $nama  = htmlentities(strip_tags(trim($_POST["nama"])));
     $email = htmlentities(strip_tags(trim($_POST["email"])));
 

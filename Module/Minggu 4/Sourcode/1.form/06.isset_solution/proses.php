@@ -7,8 +7,11 @@
 <body>
 <h1>Halaman Proses</h1>
 <?php
+  // Menampilkan nama yang diinputkan
   echo "Nama: ".$_POST["nama"]."<br>"; 
+  // Menampilkan email yang diinputkan
   echo "Email: ".$_POST["email"]."<br>"; 
+  // Menampilkan pilihan belajar PHP jika checkbox di centang
   if (isset($_POST["belajar"])) {
     echo "Belajar: ".$_POST["belajar"]."<br>"; 
   }
