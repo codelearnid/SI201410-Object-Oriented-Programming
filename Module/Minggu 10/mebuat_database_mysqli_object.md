@@ -1,4 +1,4 @@
-```php{line-numbers}
+```php
 <?php
 mysqli_report(MYSQLI_REPORT_STRICT);
 
